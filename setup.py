@@ -14,7 +14,6 @@ def get_default_dependencies():
     if platform in ["cuda", "cpu"]:
         return [
             "torch>=2.1.2",
-            "triton>=2.3.1",
         ]
     elif platform == "rocm":
         return [
